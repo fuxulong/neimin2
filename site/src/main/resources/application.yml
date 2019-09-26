@@ -1,0 +1,17 @@
+server:
+  port: 8833
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/frames?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+
+mybatis:
+  typeAliasesPackage:
+  mapperLocations: classpath:mapper/*.xml
+
+
